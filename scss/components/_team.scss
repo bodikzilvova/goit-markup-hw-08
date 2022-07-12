@@ -12,10 +12,33 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width:1199.98px) {
+        font-size: 28px;
+    line-height: 1.17;
+        }
 }
 
 .team-item {
-    display: flex;
+
+    @media screen and (max-width:767.98px) {
+            display: block;
+            align-items: center;
+                justify-content: center;
+    
+        }
+    
+        @media screen and (max-width:1199.98px) {
+            display: flex;
+            flex-wrap: wrap;
+
+
+    
+        }
+    
+        @media screen and (min-width:1200px) {
+            display: flex;
+        }
 }
 
 .team-content {
@@ -27,6 +50,22 @@
     &:last-child {
             margin-right: 0px;
         }
+
+                 @media screen and (max-width:767.98px) {
+                    margin-right: 0px;
+                    margin-bottom: 30px;
+                 }
+
+                                  @media screen and (min-width:768px) and (max-width:1199.98px) {
+                                      margin-right: 30px;
+                                      margin-bottom: 30px;
+                                      width: 354px;
+
+                                    &:nth-child(even) {
+                                            margin-right: 0px;
+                                        }
+
+                                  }
 }
 
 
@@ -56,6 +95,11 @@
 
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media screen and (max-width:1199.98px) {
+            padding-bottom: 24px;
+    
+        }
 }
 
 .icons-list {
