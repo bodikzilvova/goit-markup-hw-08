@@ -29,7 +29,9 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    
+    @media screen and (max-width:1199.98px) {
+            width: 450px;
+        }
 }
 
 .modal-button {
@@ -98,6 +100,10 @@
                 &:focus~.icons-form {
                     fill: var(--blue-color);
                 }
+
+                           @media screen and (max-width:1199.98px) {
+                               width: 370px;
+                           }
 }
 
 
@@ -132,6 +138,11 @@ textarea {
         &:focus {
             border-color: var(--blue-color);
         }
+
+
+                @media screen and (max-width:1199.98px) {
+                    width: 370px;
+                }
 }
 
 
@@ -194,6 +205,13 @@ textarea {
             margin-right: 7px;
       
         }
+                
+        @media screen and (max-width:1199.98px) {
+                     font-size: 12px;
+                     line-height: 1.16;
+                 }
+
+                
 }
 
 
@@ -205,6 +223,11 @@ textarea {
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     margin-left: 4px;
+
+    @media screen and (max-width:1199.98px) {
+            font-size: 12px;
+                line-height: 1.16;
+        }
 
 }
 
