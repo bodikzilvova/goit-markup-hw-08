@@ -53,14 +53,12 @@
             >
           </li>
         </ul>
- <!-- Кнопка відкриття бургеру -->
-          <button aria-expanded="false"
-            aria-controls="mobile-menu"
-            class="menu-toggle js-open-menu">
-            <svg class="menu-icon"> 
-            <use href="./images/icons/symbol-defs.svg#icon-menu"> </use>
-             </svg>
-           </button>
+        <!-- Кнопка відкриття бургеру -->
+        <button aria-expanded="false" aria-controls="mobile-menu" class="menu-toggle js-open-menu">
+          <svg class="menu-icon">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--Основний контент-->
@@ -457,41 +455,50 @@
       </section>
     </main>
 
-     <!-- Бургер меню -->
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="menu-toggle js-close-menu"></button>
-          <nav>
-            <ul class="menu-nav">
-              <li class="menu-item">
-                <a class="menu-link" href="./index.html">Студия</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-           <ul class="menu-contacts">
-          <li class="menu-list">
-            <a class="contacts-link" href="tel:+380961111111"
-              >
-              +38 096 111 11 11</a
-            >
-            <li class="contacts-list">
-            <a class="contacts-link" href="mailto:info@devstudio.com" lang="en"
-              >
-              info@devstudio.com</a
-            >
+    <!-- Бургер меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu" type="button">
+        <svg class="close-icon">
+          <use href="./images/icons/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="menu-nav">
+          <li class="menu-item">
+            <a class="nav-link" href="./index.html">Студия</a>
           </li>
-         <ul class="menu-social">
-          <li class="menu-link">Instagram</li>
-          <li class="menu-link">Twitter</li>
-          <li class="menu-link">Facebook</li>
-           <li class="menu-link">LinkedIn</li>
-         </ul>
-        </div>
+          <li class="menu-item">
+            <a class="nav-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="menu-contacts">
+        <li class="menu-phone">
+          <a class="phone-link" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+
+        <li class="menu-mail">
+          <a class="mail-link" href="mailto:info@devstudio.com" lang="en"> info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu-social">
+        <li class="menu-link">
+          <a class="menu-links" href="https://www.instagram.com/">Instagram</a>
+        </li>
+        <li class="menu-link">
+          <a class="menu-links" href="https://twitter.com/?lang=uk">Twitter</a>
+        </li>
+        <li class="menu-link">
+          <a class="menu-links" href="https://about.facebook.com/">Facebook</a>
+        </li>
+        <li class="menu-link">
+          <a class="menu-links" href="https://www.linkedin.com/">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <!--Футер контакти-->
 
     <!-- <footer class="footer">

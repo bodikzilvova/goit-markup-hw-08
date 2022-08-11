@@ -53,6 +53,12 @@
             >
           </li>
         </ul>
+        <!-- Кнопка відкриття бургеру -->
+        <button aria-expanded="false" aria-controls="mobile-menu" class="menu-toggle js-open-menu">
+          <svg class="menu-icon">
+            <use href="./images/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -251,6 +257,52 @@
         </div>
       </section>
     </main>
+
+    <!-- Бургер меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu" type="button">
+        <svg class="close-icon">
+          <use href="./images/icons/symbol-defs.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="menu-nav">
+          <li class="menu-item">
+            <a class="nav-link" href="./index.html">Студия</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-item">
+            <a class="nav-link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="menu-contacts">
+        <li class="menu-phone">
+          <a class="phone-link" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+
+        <li class="menu-mail">
+          <a class="mail-link" href="mailto:info@devstudio.com" lang="en"> info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu-social">
+        <li class="menu-link">
+          <a class="menu-links" href="https://www.instagram.com/">Instagram</a>
+        </li>
+        <li class="menu-link">
+          <a class="menu-links" href="https://twitter.com/?lang=uk">Twitter</a>
+        </li>
+        <li class="menu-link">
+          <a class="menu-links" href="https://about.facebook.com/">Facebook</a>
+        </li>
+        <li class="menu-link">
+          <a class="menu-links" href="https://www.linkedin.com/">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <footer class="footer">
       <div class="container footer-container">
         <div>
@@ -300,5 +352,14 @@
        
       </div>
     </footer>
+
+
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
