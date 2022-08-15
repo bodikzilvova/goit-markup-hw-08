@@ -1307,6 +1307,75 @@ textarea {
           align-items: baseline;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .address-container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .address-container {
+    margin-right: 165px;
+    text-align: center;
+  }
+}
+
+.logo-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-socials {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .logo-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .logo-footer {
   color: var(--blue-color);
   text-decoration: none;
@@ -1319,6 +1388,18 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-footer {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .logo-footer {
+    display: block;
+  }
 }
 
 .logo-text {
@@ -1335,12 +1416,24 @@ address {
   font-style: normal;
 }
 
+@media screen and (max-width: 768px) {
+  address {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-item {
   margin-bottom: 9px;
 }
 
 .footer-item:last-child {
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .map-list {
+    text-align: center;
+  }
 }
 
 .map {
@@ -1375,6 +1468,21 @@ address {
 
 .connect-icons {
   margin-left: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .connect-icons {
+    margin-left: 0px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .connect-icons {
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 
 .footer-list {
@@ -1427,6 +1535,27 @@ address {
           align-items: flex-end;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-mailing {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-mailing {
+    display: block;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .form-mailing {
+    display: block;
+  }
+}
+
 .text-mailing {
   color: var(--white-color);
   font-size: 14px;
@@ -1443,6 +1572,18 @@ address {
   background-color: var(--blackhero-color);
   border-radius: 4px;
   color: var(--white-color);
+}
+
+@media screen and (max-width: 768px) {
+  .form-mailing {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .form-mailing {
+    width: 450px;
+  }
 }
 
 .btn-mailing {
@@ -1469,6 +1610,18 @@ address {
   border-radius: 4px;
   width: 200px;
   height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-mailing {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .btn-mailing {
+    margin-top: 20px;
+  }
 }
 
 .icon-send {
