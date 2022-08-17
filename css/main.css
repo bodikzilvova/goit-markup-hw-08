@@ -1644,12 +1644,35 @@ address {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .add-navi {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .add-item {
   margin-right: 8px;
 }
 
 .add-item:last-child {
   margin-right: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .add-item {
+    margin-bottom: 15px;
+  }
+  .add-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 .button {
@@ -1697,12 +1720,41 @@ address {
   margin-bottom: 30px;
 }
 
-.net-item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (max-width: 768px) {
+  .net-item {
+    margin-right: 0px;
+    width: 450px;
+    height: 404px;
+  }
 }
 
-.net-item:nth-last-child(-n+3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .net-item {
+    width: 354px;
+    height: 404px;
+  }
+  .net-item:nth-child(even) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .net-item {
+    width: 370px;
+    height: 404px;
+  }
+  .net-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .net-item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .special-item {
+    height: 440px;
+  }
 }
 
 .action {
@@ -1746,6 +1798,12 @@ address {
   border-bottom: 1px solid #EEEEEE;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .add-height {
+    height: 146px;
+  }
+}
+
 .portfolio-titles {
   color: var(--main-color);
   margin-bottom: 4px;
@@ -1774,5 +1832,11 @@ address {
 .portfolio-link:hover, .portfolio-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .portfoloi-img {
+    width: 354px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
