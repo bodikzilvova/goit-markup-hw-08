@@ -188,6 +188,7 @@ ul {
   cursor: pointer;
   background: #FFFFFF;
   border: none;
+  line-height: 0;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -300,8 +301,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 999;
   padding: 48px 83px 48px 40px;
   background-color: var(--white-color);
@@ -312,6 +313,10 @@ ul {
 
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+.container-btn {
+  position: relative;
 }
 
 .menu-item {
@@ -389,13 +394,13 @@ ul {
 }
 
 .menu-close {
-  width: 19px;
-  height: 19px;
+  width: 40px;
+  height: 40px;
   background: #FFFFFF;
   border: none;
-  position: absolute;
-  right: 8px;
-  top: 8px;
+  position: fixed;
+  right: 15px;
+  top: 10px;
   cursor: pointer;
 }
 
@@ -410,7 +415,6 @@ ul {
 .hero-section {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/img-section-hero/hero-img-mobile.jpg);
   background-repeat: no-repeat;
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -444,10 +448,6 @@ ul {
     background-image: url("../../images/img-section-hero/hero-img-desktop@2x.jpg");
   }
 }
-.hero-group {
-  width: 696px;
-}
-
 .hero-title {
   color: var(--white-color);
   font-weight: 900;
@@ -507,7 +507,7 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450;
   padding: 43px 40px 37px 40px;
   background-color: var(--white-color);
   border-radius: 4px;
